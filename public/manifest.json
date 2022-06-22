@@ -1,11 +1,9 @@
 {
-    // name
+    
     "name": "Budget Tracker",
 
-    // short_name
     "short_name": "Budgeting",
 
-    // icons
     "icons": [
         {
             "src": "icons/icon-72x72.png",
@@ -49,14 +47,12 @@
         }
     ],
 
-    // theme_color
     "theme_color": "#e8dded",
-    // background_color
 
     "background_color": "#e8dded",
-    // start_url
+
     "start_url": ".",
     
-    // display
+
     "display": "standalone"
 }
