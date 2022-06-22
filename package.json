@@ -1,7 +1,7 @@
 {
   "name": "budget-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "Application that allows users to add expenses and deposits to their budget with or without a connection.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,5 +23,6 @@
     "express": "^4.17.1",
     "mongoose": "^5.5.15",
     "morgan": "^1.9.1"
-  }
+  },
+  "keywords": []
 }
