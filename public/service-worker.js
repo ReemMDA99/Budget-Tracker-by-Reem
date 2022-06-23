@@ -54,4 +54,15 @@ self.addEventListener('activate', function (e) {
 
 // retrieving information from the cache 
 self.addEventListener('fetch', function (e) {
+    console.log('fetch request : ' + e.request.url)
+    e.respondWith(
+      caches.match(e.request).then(function (request) {
+        if (request) { // if cache is available, respond with cache
+          console.log('responding with cache : ' + e.request.url)
+          return request
+        } else {       // if there are no cache, try fetching request
+            return request || fetch(e.request)
+        }
+ 
+    }));
 });
