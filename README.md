@@ -20,7 +20,7 @@ SO THAT my account balance is accurate when I am traveling
 ![Image](./assests/Picture1.png)
 
 ## Mobile Screen showing App Installed
-![Image](./assests/IMG-20220623-WA0013.jpg)
+![Image](./assests/Picture4.jpg)
 
 ## Technologies Used
 
