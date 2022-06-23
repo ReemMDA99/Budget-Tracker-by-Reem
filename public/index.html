@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="manifest" href="manifest.json">
-  
+
   <title>Budget Tracker</title>
 </head>
 <body>
@@ -44,5 +44,17 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script src="js/index.js"></script>
+  <script src="js/idb.js"></script>
+  <!-- include the ./ in front of service-worker.js in the preceding code block. If we used an absolute path here, this configuration would break on the deployed application.-->
+  <script src="./service-worker.js"></script>
 </body>
+<script>
+  (function() {
+    if("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./service-worker.js")
+        .then(() => console.log("Service Worker registered successfully."))
+        .catch(error => console.log("Service Worker registration failed:", error));
+    }
+  })();
+  </script>
 </html>
