@@ -44,7 +44,7 @@ self.addEventListener('activate', function (e) {
                 console.log('deleting cache : ' + keyList[i] );
                 return caches.delete(keyList[i]);
             }
-        }));
+      }));
 
     }));
 });
@@ -65,6 +65,6 @@ self.addEventListener('fetch', function (e) {
       
             // You can omit if/else for console.log & put one line below like this too.
             // return request || fetch(e.request)
-    }))
+    }));
 });
 
